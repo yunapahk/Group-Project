@@ -4,7 +4,7 @@
 // get .env variables
 require("dotenv").config();
 // pull PORT from .env, give default value of 3000
-// pull MONGODB_URL from .env
+// pull DATABASE_URL from .env
 const { PORT = 4444, DATABASE_URL } = process.env;
 // import express
 const express = require("express");
