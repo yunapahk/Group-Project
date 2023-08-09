@@ -66,6 +66,19 @@ app.get("/note", async (req, res) => {
   }
 });
 
+// SHOW 
+app.get("/note/:id", async (req, res) => {
+  try {
+    // find note by id using req.params.id
+    const note = await Note.findById(req.params.id);
+    // send note
+    res.json(note);
+  } catch (error) {
+    // send error
+    res.status(400).json(error);
+  }
+});
+
 // CREATE 
 app.post("/note", async (req, res) => {
   try {
