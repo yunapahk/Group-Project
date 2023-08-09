@@ -1,5 +1,3 @@
-# Group-Project
-
 # PROJECT 3
 
 - **Project Name:** Bookmark'D
