@@ -35,6 +35,7 @@ mongoose.connection
 ////////////////////////////////
 const NoteSchema = new mongoose.Schema({
   title: String,
+  description: String,
   url: String,
 });
 
@@ -90,6 +91,20 @@ app.put("/note/:id", async (req, res) => {
     }
   });
   
+// SHOW
+app.get("/note/:id", async (req, res) => {
+  try {
+    // find note by id using req.params.id
+    const note = await Note.findById(req.params.id);
+    // send note
+    res.json(note);
+  } catch (error) {
+    // send error
+    res.status(400).json(error);
+  }
+});
+
+
   // DELETE
   app.delete("/note/:id", async (req, res) => {
     try {
