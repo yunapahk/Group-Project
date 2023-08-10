@@ -14,8 +14,21 @@ BookmarkD is an app That was created in order for its users to be able to take n
 Each Note in a users library can be edited & updated. There will also be an option to add new notes as well as delete current ones. 
 
 ## Mock UP of UI
+***Index/Show***
 
-![Desktop View](https://i.imgur.com/nji3dMd.png)
+![Home/Landing Page](https://i.imgur.com/uj97OVb.png)
+
+***Create***
+
+![Create Page](https://i.imgur.com/mJRTfrW.png)
+
+***Update/Edit***
+
+![Update Page](https://i.imgur.com/tkD1pkA.png)
+
+***Delete***
+
+![Delete Page](https://i.imgur.com/Bo8A4fI.png)
 
 ## List of Backend Endpoints
 
