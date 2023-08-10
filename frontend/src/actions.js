@@ -13,7 +13,7 @@ export const createAction = async ({ request }) => {
     url: formData.get("url"),
   };
   // send the new Note to our backend API
-  await fetch(`${baseUrl}/notes`, {
+  await fetch(`${baseUrl}/note`, {
     // tell fetch to make a post request
     method: "POST",
     headers: {

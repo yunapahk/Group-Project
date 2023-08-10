@@ -1,5 +1,9 @@
 function Header(props) {
-  return <h1>Bookmark'd</h1>;
+  return (
+    <div>
+      <h1>Bookmark'd</h1>
+    </div>
+  );
 }
 
 export default Header;
