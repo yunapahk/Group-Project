@@ -1,7 +1,7 @@
 # PROJECT 3
 
 - **Project Name:** Bookmark'D
-- **Project By:** Isaac Asher, Yunah Pahk, Haleh Bozorgnia, and Nyijia Morgan
+- **Project By:** Isaac Asher, Yuna Pahk, Haleh Bozorgnia, and Nyijia Morgan
 - [**LINK TO GITHUB**](https://github.com/yunapahk/Group-Project/tree/main/backend)
 - [**LINK TO DEPLOYED WEBSITE**](https://bookmarkd-504g.onrender.com)
 - **Languages, Database, and Frameworks Used:** React, Express, Node, MongoDB, SASS, EJS, JSX, Javascript
