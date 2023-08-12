@@ -15,6 +15,7 @@ router.use(isLoggedIn)//middleware to make sure the user is logged in
         const username = req.payload.username
       // send all notes
       res.json(await Note.find({username}));
+      // res.json(await Note.find({}));
     } catch (error) {
       //send error
       res.status(400).json({error});
@@ -38,10 +39,13 @@ router.use(isLoggedIn)//middleware to make sure the user is logged in
   // CREATE 
   router.post("/", async (req, res) => {
     try {
+      console.log(req.payload)
         const username = req.payload.username
         req.body.username = username
       // send all notes
-      res.json(await Note.create(req.body));
+      const newNote = await Note.create(req.body);
+      console.log(newNote)
+      res.json(newNote)
     } catch (error) {
       //send error
       res.status(400).json({error});

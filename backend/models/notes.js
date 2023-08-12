@@ -8,7 +8,8 @@ const {Schema, model} = mongoose; // Destructuring
 const NoteSchema = new Schema({
     title: String,
     description: String,
-    url: String
+    url: String,
+    username: {type: String, required: true}
   });
   
   const Note = model("Note", NoteSchema);
