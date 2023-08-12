@@ -31,12 +31,12 @@ router.post("/login", async (req, res) => {
     try {
     const {username, password} = req.body
     //get the user
-    const user = await User.findOne(username)
+    const user = await User.findOne({username})
 
     if(user) {
         const passwordCheck = await bcrypt.compare(password, user.password)
         if (passwordCheck) {
-            const payload = (username)
+            const payload = {username}
             const token = await jwt.sign(payload, process.env.SECRET)
             //send a response that includes cookie
             res.cookie("token", token, {httpOnly: true}).json({payload, status: "Logged In"})
